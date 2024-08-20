@@ -79,7 +79,7 @@ function pv510gui() {
 }
 
 function pvtunnel() {
-    ssh -L 11111:$1:11111 mhenryde@$1
+    ssh -L 11111:$1:11111 pmohan@$1
 }
 
 {{ end }}
@@ -104,3 +104,5 @@ function load_custom_modules {
 {{- if or (.nrel_hpc) (.ornl_hpc) }}
 load_custom_modules
 {{ end }}
+
+# vim:ft=zsh:tw=80:sw=4:sts=4:et
