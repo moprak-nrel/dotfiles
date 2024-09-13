@@ -36,7 +36,6 @@ zinit wait lucid light-mode for \
        "OMZP::git" \
        "OMZP::poetry" \
        "OMZP::pyenv" \
-       "OMZP::tmux" \
        "OMZP::zoxide"
 
 zinit ice lucid from"gh-r" as"command" \
@@ -60,7 +59,7 @@ CORRECT_IGNORE_FILE='.*'
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=()
+plugins=(tmux)
 
 source $ZSH/oh-my-zsh.sh
 
